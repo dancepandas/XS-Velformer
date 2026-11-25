@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the corresponding paper."
+title: "XS-VelFormer: morphology-aware cross-section velocity interpolation for river monitoring"
+authors:
+  - name: "XS-VelFormer authors"
+repository-code: "https://github.com/dancepandas/XS-Velformer"
+license: Apache-2.0
+version: 1.0.0
+date-released: "2026-11-25"

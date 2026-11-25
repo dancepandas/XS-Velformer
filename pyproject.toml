@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xsvelformer"
+version = "1.0.0"
+description = "XS-VelFormer: morphology-aware query transformer for river cross-section velocity interpolation, reconstruction and densification"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [{ name = "XS-VelFormer authors" }]
+keywords = ["river", "velocity", "transformer", "cross-section", "hydrology", "interpolation"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Hydrology",
+]
+
+dependencies = [
+    "numpy>=1.23",
+    "torch>=2.0",
+    "scipy>=1.10",
+    "matplotlib>=3.5",
+]
+
+[project.urls]
+Repository = "https://github.com/dancepandas/XS-Velformer"
+Issues = "https://github.com/dancepandas/XS-Velformer/issues"
+
+[tool.setuptools.packages.find]
+include = ["xsvelformer*"]
+exclude = ["tests*", "examples*", "data*", "models*", "baseline*", "evaluation*"]
+
+[tool.setuptools.package-data]
+xsvelformer = ["_artifacts/**"]

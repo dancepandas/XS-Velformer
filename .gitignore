@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# Environments
+.venv/
+venv/
+env/
+
+# Secrets — never commit
+.env
+.env.*
+accounts.json
+*credentials*
+
+# Data and outputs
+v_data/
+checkpoints/
+artifacts/
+result/
+outputs/
+*.pkl
+!examples/*.pkl
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
